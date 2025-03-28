@@ -1,0 +1,144 @@
+/* General Layout */
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+  }
+  
+  /* Main Image Styling */
+  .product-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .small-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .thumbnail.active {
+    border-color: #000; /* Highlight the active thumbnail */
+  }
+  
+  .thumbnail:hover {
+    border-color: #555;
+  }
+  
+  /* Product Info Styling */
+  .product-info {
+    width: 45%;
+  }
+  
+  .product-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .product-info-prices {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+  }
+  
+  .product-info-prices .price {
+    font-size: 24px;
+    color: #ff5722;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .product-info-prices .old-price {
+    font-size: 18px;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Delivery Info */
+  .delivery ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .delivery li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .delivery .material-symbols-outlined {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #4CAF50;
+  }
+  
+  /* Buttons Styling */
+  .buttons-outer {
+    margin-top: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Wishlist Button */
+  button:nth-child(1) {
+    background-color: #f44336;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #d32f2f;
+  }
+  

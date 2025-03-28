@@ -1,0 +1,166 @@
+/* Shop section styles */
+.shop-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 35px 0;
+}
+
+.subheading {
+  font-family: 'sans-serif';
+  font-optical-sizing: auto;
+  display: block;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-size: 2.5rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  font-family: sans-serif;
+}
+
+.shop-section {
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: white;
+padding: 35px 0;
+
+}
+.SUBHEADING1 {
+  padding-top: 30px;
+
+}
+
+.shop-images {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 20px;
+max-width: 1280px;
+width: 100%;
+}
+
+.shop-link {
+background-color: black;
+padding: 1px 20px 20px; /* Adjusted top padding to 10px */
+display: flex;
+cursor: pointer;
+flex-direction: column;
+white-space: nowrap;
+opacity: 2.5;
+border-radius: 0 50px 50px 0;
+}
+
+
+.shop-link img {
+width: 100%;
+height: 260px;
+object-fit: cover;
+margin-bottom: 10px;
+border-radius: 0 50px 0 0;
+}
+
+.shop-link h3 {
+margin-bottom: 10px;
+color: white;
+display: block;
+font-weight: 500;
+letter-spacing: 0.75px;
+font-size: 1.7rem;
+}
+
+.shop-link a {
+display: inline-block;
+margin-top: 10px;
+font-size: 0.9rem;
+color: white;
+font-weight: 500;
+transition: color 0.3s ease;
+font-size: 1.7rem;
+}
+
+.shop-link:hover a {
+color: lightblue;
+text-decoration: underline;
+}
+
+
+
+.section-how {
+padding: 6rem 0;
+}
+
+.step-number {
+font-size: 8rem;
+font-weight: 600;
+color: #ddd;
+margin-bottom: 1.2rem;
+}
+
+.step-description {
+font-size: 1.8rem;
+line-height: 1.8;
+}
+
+.step-img-box {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.step-img {
+width: 90%;
+}
+
+.third {
+width: 60%;
+}
+
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+font-weight: 700;
+color: #333;
+letter-spacing: -0.5px;
+}
+
+.heading-primary {
+font-size: 5.2rem;
+line-height: 1.05;
+margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+font-size: 4rem;
+line-height: 1.2;
+margin-bottom: 5rem;
+}
+
+.heading-tertiary {
+font-size: 3rem;
+line-height: 1.2;
+margin-bottom: 3.2rem;
+}
+
+.first {
+width: 110%;
+}
+@media (min-width: 360px) {
+.shop-section,
+.shop-images {
+  padding-left: 20px; /* Adjust as per your design */
+  padding-right: 20px;
+}
+}
+
+@media (min-width: 480px) {
+.shop-section,
+.shop-images {
+  padding-left: 30px; /* Adjust further for larger screens */
+  padding-right: 30px;
+}
+}

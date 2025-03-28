@@ -1,0 +1,190 @@
+.admin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-dashboard h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .admin-dashboard ul li {
+    margin: 0 10px;
+  }
+  
+  .admin-dashboard ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-dashboard ul li a:hover {
+    background-color: #0056b3;
+  }
+
+  .admin-dashboard button:hover {
+    background-color: #0056b3;
+  }
+
+  button + button {
+    margin-left: 10px;
+  }
+  
+  /* Additional styling for CRUD components */
+  
+  .crud-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .crud-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .crud-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .crud-container ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .crud-container ul li button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crud-container ul li button:hover {
+    background-color: #218838;
+  }
+  
+  .crud-container .add-item {
+    margin-top: 20px;
+  }
+  
+  .crud-container .add-item input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .crud-container .add-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crud-container .add-item button:hover {
+    background-color: #0056b3;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Header styling */
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Row hover effect */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Zebra striping effect */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Align button to center */
+  td button {
+    display: block;
+    margin: 5px auto;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    th {
+      text-align: right;
+    }
+  
+    th, td {
+      text-align: left;
+      padding: 10px;
+    }
+  
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td button {
+      margin: 10px auto;
+    }
+  }

@@ -1,0 +1,303 @@
+/* Features section styles */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Add padding for smaller screens */
+}
+
+.heading-secondary {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #333;
+  text-align: left;
+}
+
+/* Grid layout for 3 columns and 2 rows */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.step-text-box {
+  max-width: 300px;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+/* Image styles for the feature image below the grid */
+.feature-img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.feature-img {
+  width: 100%;
+  height: 650px;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+/* Image box inside grid */
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 100%;
+  height: 600px;
+}
+
+/* For screens 1280px and smaller */
+@media (max-width: 1280px) {
+  .heading-secondary {
+    font-size: 15px; /* Reduced font size from 22px to 18px */
+  }
+  .heading-tertiary {
+    font-size: 16px; /* Reduced font size further */
+  }
+  .step-description {
+    font-size: 12px; /* Reduced font size further */
+  }
+  .grid {
+    column-gap: 24px; /* Adjusted gap from 32px to 24px */
+    row-gap: 24px;
+  }
+  .step-img {
+    height: 480px; /* Slightly reduced image height */
+  }
+}
+
+/* For screens 1060px and smaller */
+@media (max-width: 1060px) {
+  .heading-secondary {
+    font-size: 14px; /* Reduced font size from 20px to 16px */
+  }
+  .heading-tertiary {
+    font-size: 14px; /* Reduced font size further */
+  }
+  .step-description {
+    font-size: 11px; /* Reduced font size further */
+  }
+  .grid {
+    column-gap: 20px; /* Adjusted gap */
+    row-gap: 20px;
+  }
+  .step-img {
+    height: 420px;
+  }
+}
+
+/* For screens 980px and smaller */
+@media (max-width: 980px) {
+  .heading-secondary {
+    font-size: 13px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 12px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 10px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 16px; /* Adjusted gap */
+    row-gap: 16px;
+  }
+  .step-img {
+    height: 380px;
+  }
+}
+
+/* For screens 800px and smaller */
+@media (max-width: 800px) {
+  .heading-secondary {
+    font-size: 12px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 10px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 9px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 14px; /* Adjusted gap */
+    row-gap: 14px;
+  }
+  .step-img {
+    height: 340px;
+  }
+}
+
+/* For screens 650px and smaller */
+@media (max-width: 650px) {
+  .heading-secondary {
+    font-size: 10px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 9px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 8px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 12px; /* Adjusted gap */
+    row-gap: 12px;
+  }
+  .step-img {
+    height: 300px;
+  }
+}
+
+/* For screens 550px and smaller */
+@media (max-width: 550px) {
+  .heading-secondary {
+    font-size: 9px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 8px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 7px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 10px; /* Adjusted gap */
+    row-gap: 10px;
+  }
+  .step-img {
+    height: 260px;
+  }
+}
+
+/* For screens 500px and smaller */
+@media (max-width: 500px) {
+  .heading-secondary {
+    font-size: 8px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 7px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 6px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 8px; /* Adjusted gap */
+    row-gap: 8px;
+  }
+  .step-img {
+    height: 240px;
+  }
+}
+
+/* For screens 460px and smaller */
+@media (max-width: 460px) {
+  .heading-secondary {
+    font-size: 7px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 6px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 5px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 6px; /* Adjusted gap */
+    row-gap: 6px;
+  }
+  .step-img {
+    height: 220px;
+  }
+}
+
+/* For screens 420px and smaller */
+@media (max-width: 420px) {
+  .heading-secondary {
+    font-size: 6px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 5px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 4px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 5px; /* Adjusted gap */
+    row-gap: 5px;
+  }
+  .step-img {
+    height: 200px;
+  }
+}
+
+/* For screens 380px and smaller */
+@media (max-width: 380px) {
+  .heading-secondary {
+    font-size: 5px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 4px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 3px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 4px; /* Adjusted gap */
+    row-gap: 4px;
+  }
+  .step-img {
+    height: 180px;
+  }
+}
+
+/* For screens 360px and smaller */
+@media (max-width: 360px) {
+  .heading-secondary {
+    font-size: 4px; /* Reduced font size */
+  }
+  .heading-tertiary {
+    font-size: 3px; /* Reduced font size */
+  }
+  .step-description {
+    font-size: 2px; /* Reduced font size */
+  }
+  .grid {
+    column-gap: 3px; /* Adjusted gap */
+    row-gap: 3px;
+  }
+  .step-img {
+    height: 160px;
+  }
+}

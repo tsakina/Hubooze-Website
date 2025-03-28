@@ -1,0 +1,428 @@
+.item {
+    /* width: 240px;
+    height: full;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  
+    position: relative; */
+
+    /* Sakina's code */
+    width: 240px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    margin: 11px; /* Add some spacing between items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item p {
+    /* margin: 10px 10px;
+    text-align: left; */
+
+    /* Sakina's code */
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 350;
+    color: #333;
+}
+
+.item img {
+    /* width: 240px; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Sakina's code */
+    transition: opacity 0.5s ease-in-out; /* Smooth image transition */
+
+}
+
+/* Sakina's code */
+.item:hover img {
+    opacity: 0.9; /* Slight fade on hover */
+}
+
+.item a:hover {
+    text-decoration: none; /* Ensures underline doesn't appear on hover */
+}
+
+.item-prices-row {
+    /* display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin-left: 10px; */
+
+    /* Sakina's code */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 10px;
+    font-size: 12px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.card_arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#arrow_back,
+#arrow_forward {
+    visibility: hidden;
+    cursor: pointer;
+   
+    border-radius: 50%;
+ 
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+ 
+}
+
+#shopping_cart,
+#like {
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+
+    border-radius: 50%;
+  
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+   
+}
+
+#shopping_cart {
+    /* top: 1rem;
+   margin-right: 10px;
+    display: flex;
+    float: left; */
+
+    /* Sakina's code */
+    font-size: 24px;
+    color: black;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 50%;
+   
+}
+.cart{
+    display: flex;   
+    justify-content: end;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    visibility: hidden;    
+}
+
+.item:hover .cart {
+    visibility: visible;
+}
+
+#like {
+    top: 4rem;
+    left: 12.5rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: black;
+    background-color: #f0f0f0;
+
+}
+
+
+/* .item:hover #arrow_back,
+.item:hover #arrow_forward,
+.item:hover #shopping_cart,
+.item:hover #like,
+.item:hover .dots-container {
+    visibility: visible;
+    color: black;
+    cursor: pointer;
+} */
+
+/* Sakina's code */
+.item:hover #arrow_back,
+.item:hover #arrow_forward,
+.item:hover #shopping_cart {
+    visibility: visible;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  
+    margin-top: -1.5rem;
+    bottom: 65px;
+    width: 45%;
+    visibility: hidden;
+    background-color: #f0f0f0;
+  
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 25%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 -15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.item-name {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.item-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+
+.discount-percentage {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 0.9rem;
+    color: green;
+    /* margin: 0 0.5rem; */
+}
+
+
+@media (max-width:1280px) {
+    .item {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .item img {
+        width: 220px;
+    }
+
+    .item-price-old {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1024px) {
+    .item {
+        width: 20%;
+        font-size: 13px;
+        
+    }
+
+    .item img {
+        width: 170px;
+    }
+
+    .item-price-old {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:1280px) {
+    .item {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .item img {
+        width: 220px;
+        height: 250px;
+    }
+
+    .item-price-old {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:900px) {
+    .item {
+        width: 180px;
+        font-size: 12px;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item-price-old {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:800px) {
+    .item {
+        width: 200px;
+        font-size: 12px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item-price-old {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:760px) {
+    .item {
+        width: 200px;
+        font-size: 13px;
+        margin: auto;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item-price-old {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:500px) {
+    .item {
+        width: 130px;
+        gap: 10px;
+        margin: 10% 5%;
+        height: 280px;
+        
+    }
+    .font-size{
+        font-size:11px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 200px;
+    }
+    .item-prices-row {
+        display: flex;
+        gap: 6px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+
+}
+
+@media (max-width:400px) {
+    .item {
+        width: 130px;
+        gap: 10px;
+        margin: 10% 5%;
+        height: 280px;
+        
+    }
+    .font-size{
+        font-size:11px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width:380px) {
+    .item {
+        width: 130px;
+        gap: 10px;
+        margin: 10% 5%;
+        height: 280px;
+        
+    }
+    .font-size{
+        font-size:11px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 200px;
+    }
+
+}
+
+@media (max-width:355px) {
+    .item {
+        width: 130px;
+        gap: 10px;
+        margin: 10% 5%;
+        height: 280px;
+        
+    }
+    .font-size{
+        font-size:11px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,81 @@
+/* Video section styles */
+.Video {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.Video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.attached-box {
+  position: absolute;
+  bottom: -20px !important; /* Attach the box right below the video */
+  left: 0;
+  right: 0;
+  background-color: black; /* Semi-transparent background */
+  color: white;
+  padding: 25px 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  height:90px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Video .Return {
+  display: none; /* Removed the Return image in this design */
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+  .Video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .attached-box {
+    bottom: 0; /* Attach the box closer to the video */
+    font-size: 18px; /* Slightly smaller font */
+    height: 80px;
+  }
+}
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 768px) {
+  .Video video {
+    width: 100%;
+    height: 300px;
+  }
+
+  .attached-box {
+    bottom: -60px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    height: 70px;
+  }
+}
+
+/* For very small screens (mobile phones) */
+@media (max-width: 480px) {
+  .Video video {
+    width: 100%;
+    height: 350px;
+  }
+
+  .attached-box {
+    bottom: 0;
+    font-size: 14px; /* Smaller font size for very small screens */
+    height: 60px;
+  }
+}

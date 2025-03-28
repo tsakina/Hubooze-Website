@@ -1,0 +1,115 @@
+h1, h2 {
+    font-size: 3rem; /* Increase font size */
+    color: #000; /* Explicitly set to black to ensure visibility */
+    margin-bottom: 1.6rem;
+    text-align: center; /* Optionally, center the headings */
+  }
+  
+  
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 9.6rem;
+    background-color: white; /* If navbar is white */
+  }
+  
+  .page {
+      padding: 75px;
+      font-family: 'Supermolot', sans-serif;
+      
+    }
+  
+  .Policypara {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  
+  .page {
+    padding-top: 100px; /* Ensure content starts below the navbar */
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+  
+  @media (max-width: 1280px) {
+    .PolicyPara {
+      font-size: 22px; /* Base size */
+    }
+    .first {
+      padding-left: 40px; /* Reduced padding */
+      padding-right: 40px; /* Reduced padding */
+    }
+  }
+  
+  @media (max-width: 1060px) {
+    .PolicyPara {
+      font-size: 20px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 20px; /* Further reduced padding */
+      padding-right: 20px; /* Further reduced padding */
+    }
+  }
+  
+  @media (max-width: 980px) {
+    .PolicyPara {
+      font-size: 18px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 8px; /* Further reduced padding */
+      padding-right: 8px; /* Further reduced padding */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .PolicyPara {
+      font-size: 16px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 5px; /* Further reduced padding */
+      padding-right: 5px; /* Further reduced padding */
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .PolicyPara {
+      font-size: 16px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 3px; /* Further reduced padding */
+      padding-right: 3px; /* Further reduced padding */
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .PolicyPara {
+      font-size: 16px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 3px; /* Further reduced padding */
+      padding-right: 3px; /* Further reduced padding */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .PolicyPara {
+      font-size: 16px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 3px; /* Keep padding small */
+      padding-right: 3px; /* Keep padding small */
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .PolicyPara {
+      font-size: 16px; /* Increased by 2px */
+    }
+    .first {
+      padding-left: 3px; /* Slightly adjusted padding */
+      padding-right: 3px; /* Slightly adjusted padding */
+    }
+  }
